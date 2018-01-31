@@ -26,7 +26,7 @@ namespace TypeRacer
         #region Programoppstart
         private void Form1_Load(object sender, EventArgs e)
         {
-            
+
         }
         #endregion
 
