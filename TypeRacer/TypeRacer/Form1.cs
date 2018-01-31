@@ -15,8 +15,6 @@ namespace TypeRacer
         public Form1()
         {
             InitializeComponent();
-            this.Size = new Size(415, 340);
-            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         #region Globale variabler
@@ -28,10 +26,7 @@ namespace TypeRacer
         #region Programoppstart
         private void Form1_Load(object sender, EventArgs e)
         {
-            panelMeny.Location = new Point(0, 0);
-            panelSpill.Location = new Point(0, 0);
-            panelInnstillinger.Location = new Point(0, 0);
-            panelStatistikk.Location = new Point(0, 0);
+
         }
         #endregion
 
