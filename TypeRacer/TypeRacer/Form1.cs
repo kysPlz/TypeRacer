@@ -15,18 +15,23 @@ namespace TypeRacer
         public Form1()
         {
             InitializeComponent();
+            this.Size = new Size(415, 340);
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         #region Globale variabler
         int dette = 0;
-        string denHer = "hei";
+        string denHer = "hei ";
         int osv = 5;
         #endregion
 
         #region Programoppstart
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            panelMeny.Location = new Point(0, 0);
+            panelSpill.Location = new Point(0, 0);
+            panelInnstillinger.Location = new Point(0, 0);
+            panelStatistikk.Location = new Point(0, 0);
         }
         #endregion
 
