@@ -43,7 +43,7 @@ namespace TypeRacer
 
         private void menyStatistikk_Click(object sender, EventArgs e)
         {
-            hadet
+            
         }
 
         private void menyInnstillinger_Click(object sender, EventArgs e)
