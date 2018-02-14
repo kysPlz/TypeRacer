@@ -31,8 +31,11 @@ namespace TypeRacer
         {
             panelMeny.Location = new Point(0, 0);
             panelSpill.Location = new Point(0, 0);
+            panelSpill.Visible = false;
             panelInnstillinger.Location = new Point(0, 0);
+            panelInnstillinger.Visible = false;
             panelStatistikk.Location = new Point(0, 0);
+            panelStatistikk.Visible = false;
             hentParagrafer();
         }
         #endregion
@@ -40,22 +43,24 @@ namespace TypeRacer
         #region panelMeny
         private void menyStart_Click(object sender, EventArgs e)
         {
-
+            spillStart();
         }
 
         private void menyStatistikk_Click(object sender, EventArgs e)
         {
-            
+            panelStatistikk.Visible = true;
+            panelMeny.Visible = false;
         }
 
         private void menyInnstillinger_Click(object sender, EventArgs e)
         {
-
+            panelInnstillinger.Visible = true;
+            panelMeny.Visible = false;
         }
 
         private void menyAvslutt_Click(object sender, EventArgs e)
         {
-
+            Application.Exit();
         }
         #endregion
 
@@ -65,6 +70,14 @@ namespace TypeRacer
 
         }
         #endregion
+
+        private void spillStart()
+        {
+            panelSpill.Visible = true;
+            panelMeny.Visible = false;
+
+        }
+
 
         private void hentParagrafer()
         {
