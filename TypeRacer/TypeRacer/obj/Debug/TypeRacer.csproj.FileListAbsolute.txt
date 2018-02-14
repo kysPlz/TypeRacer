@@ -18,3 +18,13 @@ C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.c
 C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.csproj.CoreCompileInputs.cache
 C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.exe
 C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.pdb
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\bin\Debug\TypeRacer.exe.config
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\bin\Debug\TypeRacer.exe
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\bin\Debug\TypeRacer.pdb
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.csprojResolveAssemblyReference.cache
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.Form1.resources
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.Properties.Resources.resources
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.csproj.GenerateResource.Cache
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.csproj.CoreCompileInputs.cache
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.exe
+C:\Users\Jakob\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.pdb

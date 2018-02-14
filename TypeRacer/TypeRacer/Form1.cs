@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TypeRacer
 {
@@ -20,9 +21,9 @@ namespace TypeRacer
         }
 
         #region Globale variabler
-        int dette = 0;
-        string denHer = "hei ";
-        int osv = 5;
+        string filNavn = "paragraf.txt";
+        Random rnd = new Random();
+        string[] paragraf = new string[5];
         #endregion
 
         #region Programoppstart
@@ -32,6 +33,7 @@ namespace TypeRacer
             panelSpill.Location = new Point(0, 0);
             panelInnstillinger.Location = new Point(0, 0);
             panelStatistikk.Location = new Point(0, 0);
+            hentParagrafer();
         }
         #endregion
 
@@ -64,6 +66,27 @@ namespace TypeRacer
         }
         #endregion
 
+        private void hentParagrafer()
+        {
+            string lestLinje = "";
+            int i = 0;
+
+            FileInfo fi = new FileInfo(filNavn);
+            try
+            {
+                using (StreamReader sr = File.OpenText(filNavn))
+                {
+                    while ((lestLinje = sr.ReadLine()) != null)
+                    {
+                        paragraf[i] = lestLinje;
+                        i++;
+                    }
+                }
+            }
+            catch { }
+
+            spillParagraf.Text = paragraf[2];
+        }
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).
     }
 }
