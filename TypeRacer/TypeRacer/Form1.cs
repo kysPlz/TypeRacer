@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace TypeRacer
 {
@@ -20,9 +21,9 @@ namespace TypeRacer
         }
 
         #region Globale variabler
-        int dette = 0;
-        string denHer = "hei ";
-        int osv = 5;
+        string filNavn = "paragraf.txt";
+        Random rnd = new Random();
+        string[] paragraf = new string[5];
         #endregion
 
         #region Programoppstart
@@ -30,35 +31,31 @@ namespace TypeRacer
         {
             panelMeny.Location = new Point(0, 0);
             panelSpill.Location = new Point(0, 0);
-            panelSpill.Visible = false;
             panelInnstillinger.Location = new Point(0, 0);
-            panelInnstillinger.Visible = false;
             panelStatistikk.Location = new Point(0, 0);
-            panelStatistikk.Visible = false;
+            hentParagrafer();
         }
         #endregion
 
         #region panelMeny
         private void menyStart_Click(object sender, EventArgs e)
         {
-            spillStart();
+
         }
 
         private void menyStatistikk_Click(object sender, EventArgs e)
         {
-            panelStatistikk.Visible = true;
-            panelMeny.Visible = false;
+            
         }
 
         private void menyInnstillinger_Click(object sender, EventArgs e)
         {
-            panelInnstillinger.Visible = true;
-            panelMeny.Visible = false;
+
         }
 
         private void menyAvslutt_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+
         }
         #endregion
 
@@ -69,13 +66,27 @@ namespace TypeRacer
         }
         #endregion
 
-        private void spillStart()
+        private void hentParagrafer()
         {
-            panelSpill.Visible = true;
-            panelMeny.Visible = false;
-            
-        }
+            string lestLinje = "";
+            int i = 0;
 
+            FileInfo fi = new FileInfo(filNavn);
+            try
+            {
+                using (StreamReader sr = File.OpenText(filNavn))
+                {
+                    while ((lestLinje = sr.ReadLine()) != null)
+                    {
+                        paragraf[i] = lestLinje;
+                        i++;
+                    }
+                }
+            }
+            catch { }
+
+            spillParagraf.Text = paragraf[2];
+        }
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).
     }
 }
