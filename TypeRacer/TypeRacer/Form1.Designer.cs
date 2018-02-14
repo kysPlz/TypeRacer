@@ -350,6 +350,7 @@
             this.Controls.Add(this.panelInnstillinger);
             this.Controls.Add(this.panelMeny);
             this.Controls.Add(this.panelStatistikk);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
