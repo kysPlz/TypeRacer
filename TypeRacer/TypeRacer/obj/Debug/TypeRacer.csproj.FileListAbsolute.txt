@@ -8,3 +8,13 @@ C:\Users\Philip\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRac
 C:\Users\Philip\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.csproj.CoreCompileInputs.cache
 C:\Users\Philip\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.exe
 C:\Users\Philip\Documents\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.pdb
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\bin\Debug\TypeRacer.exe.config
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\bin\Debug\TypeRacer.exe
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\bin\Debug\TypeRacer.pdb
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.csprojResolveAssemblyReference.cache
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.Form1.resources
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.Properties.Resources.resources
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.csproj.GenerateResource.Cache
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.csproj.CoreCompileInputs.cache
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.exe
+C:\Users\rholm\source\GitHub\TypeRacer\TypeRacer\TypeRacer\obj\Debug\TypeRacer.pdb
