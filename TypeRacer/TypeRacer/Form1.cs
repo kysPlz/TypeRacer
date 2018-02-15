@@ -77,6 +77,8 @@ namespace TypeRacer
             panelSpill.Visible = true;
             panelMeny.Visible = false;
             spillSkrivHer.Focus();
+
+            gjennkjennOrd();
             hentParagrafer();
         }
 
@@ -110,6 +112,11 @@ namespace TypeRacer
                 spillInfo.Text = "You're done!";
             else
                 spillInfo.Text = "Not done yet!";
+        }
+
+        private void gjennkjennOrd()
+        {
+            string[] ordForOrd = spillParagraf.Text.Split(' ');
         }
 
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).

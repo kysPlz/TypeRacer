@@ -36,13 +36,13 @@
             this.spillParagraf = new System.Windows.Forms.RichTextBox();
             this.spillSkrivHer = new System.Windows.Forms.TextBox();
             this.panelStatistikk = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.statistikkGjennomsnitt = new System.Windows.Forms.Label();
+            this.statistikkFlestOrd = new System.Windows.Forms.Label();
+            this.statistikkAntallOrd = new System.Windows.Forms.Label();
+            this.statistikkTekst3 = new System.Windows.Forms.Label();
+            this.statistikkTekst2 = new System.Windows.Forms.Label();
+            this.statistikkTekst1 = new System.Windows.Forms.Label();
+            this.statistikkInfo = new System.Windows.Forms.Label();
             this.panelMeny = new System.Windows.Forms.Panel();
             this.menyAvslutt = new System.Windows.Forms.Button();
             this.menyInnstillinger = new System.Windows.Forms.Button();
@@ -52,8 +52,8 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.innstillingerInfo = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.panelSpill.SuspendLayout();
             this.panelStatistikk.SuspendLayout();
@@ -81,9 +81,9 @@
             this.spillOrdteller.ForeColor = System.Drawing.SystemColors.ControlText;
             this.spillOrdteller.Location = new System.Drawing.Point(307, 264);
             this.spillOrdteller.Name = "spillOrdteller";
-            this.spillOrdteller.Size = new System.Drawing.Size(70, 26);
+            this.spillOrdteller.Size = new System.Drawing.Size(57, 26);
             this.spillOrdteller.TabIndex = 4;
-            this.spillOrdteller.Text = "label3";
+            this.spillOrdteller.Text = "W/M";
             // 
             // spillTid
             // 
@@ -92,9 +92,9 @@
             this.spillTid.ForeColor = System.Drawing.SystemColors.ControlText;
             this.spillTid.Location = new System.Drawing.Point(307, 21);
             this.spillTid.Name = "spillTid";
-            this.spillTid.Size = new System.Drawing.Size(70, 26);
+            this.spillTid.Size = new System.Drawing.Size(46, 26);
             this.spillTid.TabIndex = 3;
-            this.spillTid.Text = "label2";
+            this.spillTid.Text = "TID";
             // 
             // spillInfo
             // 
@@ -103,9 +103,9 @@
             this.spillInfo.ForeColor = System.Drawing.SystemColors.ControlText;
             this.spillInfo.Location = new System.Drawing.Point(15, 21);
             this.spillInfo.Name = "spillInfo";
-            this.spillInfo.Size = new System.Drawing.Size(70, 26);
+            this.spillInfo.Size = new System.Drawing.Size(99, 26);
             this.spillInfo.TabIndex = 2;
-            this.spillInfo.Text = "label1";
+            this.spillInfo.Text = "SPILLET";
             // 
             // spillParagraf
             // 
@@ -129,94 +129,94 @@
             // panelStatistikk
             // 
             this.panelStatistikk.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.panelStatistikk.Controls.Add(this.label10);
-            this.panelStatistikk.Controls.Add(this.label9);
-            this.panelStatistikk.Controls.Add(this.label8);
-            this.panelStatistikk.Controls.Add(this.label7);
-            this.panelStatistikk.Controls.Add(this.label6);
-            this.panelStatistikk.Controls.Add(this.label5);
-            this.panelStatistikk.Controls.Add(this.label4);
+            this.panelStatistikk.Controls.Add(this.statistikkGjennomsnitt);
+            this.panelStatistikk.Controls.Add(this.statistikkFlestOrd);
+            this.panelStatistikk.Controls.Add(this.statistikkAntallOrd);
+            this.panelStatistikk.Controls.Add(this.statistikkTekst3);
+            this.panelStatistikk.Controls.Add(this.statistikkTekst2);
+            this.panelStatistikk.Controls.Add(this.statistikkTekst1);
+            this.panelStatistikk.Controls.Add(this.statistikkInfo);
             this.panelStatistikk.Location = new System.Drawing.Point(12, 318);
             this.panelStatistikk.Name = "panelStatistikk";
             this.panelStatistikk.Size = new System.Drawing.Size(400, 300);
             this.panelStatistikk.TabIndex = 3;
             // 
-            // label10
+            // statistikkGjennomsnitt
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label10.Location = new System.Drawing.Point(292, 213);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 26);
-            this.label10.TabIndex = 11;
-            this.label10.Text = "label10";
+            this.statistikkGjennomsnitt.AutoSize = true;
+            this.statistikkGjennomsnitt.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.statistikkGjennomsnitt.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.statistikkGjennomsnitt.Location = new System.Drawing.Point(292, 213);
+            this.statistikkGjennomsnitt.Name = "statistikkGjennomsnitt";
+            this.statistikkGjennomsnitt.Size = new System.Drawing.Size(82, 26);
+            this.statistikkGjennomsnitt.TabIndex = 11;
+            this.statistikkGjennomsnitt.Text = "label10";
             // 
-            // label9
+            // statistikkFlestOrd
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label9.Location = new System.Drawing.Point(304, 158);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(70, 26);
-            this.label9.TabIndex = 10;
-            this.label9.Text = "label9";
+            this.statistikkFlestOrd.AutoSize = true;
+            this.statistikkFlestOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.statistikkFlestOrd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.statistikkFlestOrd.Location = new System.Drawing.Point(304, 158);
+            this.statistikkFlestOrd.Name = "statistikkFlestOrd";
+            this.statistikkFlestOrd.Size = new System.Drawing.Size(70, 26);
+            this.statistikkFlestOrd.TabIndex = 10;
+            this.statistikkFlestOrd.Text = "label9";
             // 
-            // label8
+            // statistikkAntallOrd
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label8.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label8.Location = new System.Drawing.Point(304, 105);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(70, 26);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "label8";
+            this.statistikkAntallOrd.AutoSize = true;
+            this.statistikkAntallOrd.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.statistikkAntallOrd.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.statistikkAntallOrd.Location = new System.Drawing.Point(304, 105);
+            this.statistikkAntallOrd.Name = "statistikkAntallOrd";
+            this.statistikkAntallOrd.Size = new System.Drawing.Size(70, 26);
+            this.statistikkAntallOrd.TabIndex = 9;
+            this.statistikkAntallOrd.Text = "label8";
             // 
-            // label7
+            // statistikkTekst3
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label7.Location = new System.Drawing.Point(16, 213);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(70, 26);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "label7";
+            this.statistikkTekst3.AutoSize = true;
+            this.statistikkTekst3.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.statistikkTekst3.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.statistikkTekst3.Location = new System.Drawing.Point(16, 213);
+            this.statistikkTekst3.Name = "statistikkTekst3";
+            this.statistikkTekst3.Size = new System.Drawing.Size(188, 26);
+            this.statistikkTekst3.TabIndex = 8;
+            this.statistikkTekst3.Text = "Average word/min";
             // 
-            // label6
+            // statistikkTekst2
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label6.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label6.Location = new System.Drawing.Point(16, 158);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 26);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "label6";
+            this.statistikkTekst2.AutoSize = true;
+            this.statistikkTekst2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.statistikkTekst2.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.statistikkTekst2.Location = new System.Drawing.Point(16, 158);
+            this.statistikkTekst2.Name = "statistikkTekst2";
+            this.statistikkTekst2.Size = new System.Drawing.Size(210, 26);
+            this.statistikkTekst2.TabIndex = 7;
+            this.statistikkTekst2.Text = "Best score word/min";
             // 
-            // label5
+            // statistikkTekst1
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label5.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label5.Location = new System.Drawing.Point(16, 105);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(70, 26);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "label5";
+            this.statistikkTekst1.AutoSize = true;
+            this.statistikkTekst1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.statistikkTekst1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.statistikkTekst1.Location = new System.Drawing.Point(16, 105);
+            this.statistikkTekst1.Name = "statistikkTekst1";
+            this.statistikkTekst1.Size = new System.Drawing.Size(206, 26);
+            this.statistikkTekst1.TabIndex = 6;
+            this.statistikkTekst1.Text = "Total words counted";
             // 
-            // label4
+            // statistikkInfo
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label4.Location = new System.Drawing.Point(16, 30);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(70, 26);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
+            this.statistikkInfo.AutoSize = true;
+            this.statistikkInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.statistikkInfo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.statistikkInfo.Location = new System.Drawing.Point(16, 30);
+            this.statistikkInfo.Name = "statistikkInfo";
+            this.statistikkInfo.Size = new System.Drawing.Size(81, 26);
+            this.statistikkInfo.TabIndex = 5;
+            this.statistikkInfo.Text = "STATS";
             // 
             // panelMeny
             // 
@@ -276,8 +276,8 @@
             this.panelInnstillinger.Controls.Add(this.checkBox3);
             this.panelInnstillinger.Controls.Add(this.checkBox2);
             this.panelInnstillinger.Controls.Add(this.checkBox1);
-            this.panelInnstillinger.Controls.Add(this.label12);
-            this.panelInnstillinger.Controls.Add(this.label11);
+            this.panelInnstillinger.Controls.Add(this.label1);
+            this.panelInnstillinger.Controls.Add(this.innstillingerInfo);
             this.panelInnstillinger.Location = new System.Drawing.Point(418, 318);
             this.panelInnstillinger.Name = "panelInnstillinger";
             this.panelInnstillinger.Size = new System.Drawing.Size(400, 300);
@@ -316,27 +316,27 @@
             this.checkBox1.Text = "checkBox1";
             this.checkBox1.UseVisualStyleBackColor = true;
             // 
-            // label12
+            // label1
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(15, 105);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(82, 26);
-            this.label12.TabIndex = 8;
-            this.label12.Text = "label12";
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(15, 105);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 26);
+            this.label1.TabIndex = 8;
+            this.label1.Text = "label1";
             // 
-            // label11
+            // innstillingerInfo
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.label11.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label11.Location = new System.Drawing.Point(15, 30);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(82, 26);
-            this.label11.TabIndex = 7;
-            this.label11.Text = "label11";
+            this.innstillingerInfo.AutoSize = true;
+            this.innstillingerInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.innstillingerInfo.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.innstillingerInfo.Location = new System.Drawing.Point(15, 30);
+            this.innstillingerInfo.Name = "innstillingerInfo";
+            this.innstillingerInfo.Size = new System.Drawing.Size(120, 26);
+            this.innstillingerInfo.TabIndex = 7;
+            this.innstillingerInfo.Text = "SETTINGS";
             // 
             // timer1
             // 
@@ -375,13 +375,13 @@
         private System.Windows.Forms.Label spillOrdteller;
         private System.Windows.Forms.Label spillTid;
         private System.Windows.Forms.Panel panelStatistikk;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label statistikkGjennomsnitt;
+        private System.Windows.Forms.Label statistikkFlestOrd;
+        private System.Windows.Forms.Label statistikkAntallOrd;
+        private System.Windows.Forms.Label statistikkTekst3;
+        private System.Windows.Forms.Label statistikkTekst2;
+        private System.Windows.Forms.Label statistikkTekst1;
+        private System.Windows.Forms.Label statistikkInfo;
         private System.Windows.Forms.Panel panelMeny;
         private System.Windows.Forms.Button menyAvslutt;
         private System.Windows.Forms.Button menyInnstillinger;
@@ -391,8 +391,8 @@
         private System.Windows.Forms.CheckBox checkBox3;
         private System.Windows.Forms.CheckBox checkBox2;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label innstillingerInfo;
         private System.Windows.Forms.Timer timer1;
     }
 }
