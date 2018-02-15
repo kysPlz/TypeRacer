@@ -36,6 +36,8 @@ namespace TypeRacer
             panelInnstillinger.Visible = false;
             panelStatistikk.Location = new Point(0, 0);
             panelStatistikk.Visible = false;
+
+            spillParagraf.ReadOnly = true;
         }
         #endregion
 
@@ -66,7 +68,7 @@ namespace TypeRacer
         #region panelSpill
         private void timer1_Tick(object sender, EventArgs e)
         {
-
+            
         }
         #endregion
 
@@ -74,6 +76,7 @@ namespace TypeRacer
         {
             panelSpill.Visible = true;
             panelMeny.Visible = false;
+            spillSkrivHer.Focus();
             hentParagrafer();
         }
 
@@ -99,6 +102,7 @@ namespace TypeRacer
 
             spillParagraf.Text = paragraf[rnd.Next(5)];
         }
+
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).
     }
 }

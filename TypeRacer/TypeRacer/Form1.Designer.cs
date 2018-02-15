@@ -235,7 +235,7 @@
             this.menyAvslutt.Name = "menyAvslutt";
             this.menyAvslutt.Size = new System.Drawing.Size(130, 44);
             this.menyAvslutt.TabIndex = 3;
-            this.menyAvslutt.Text = "button4";
+            this.menyAvslutt.Text = "Quit";
             this.menyAvslutt.UseVisualStyleBackColor = true;
             this.menyAvslutt.Click += new System.EventHandler(this.menyAvslutt_Click);
             // 
@@ -245,7 +245,7 @@
             this.menyInnstillinger.Name = "menyInnstillinger";
             this.menyInnstillinger.Size = new System.Drawing.Size(130, 44);
             this.menyInnstillinger.TabIndex = 2;
-            this.menyInnstillinger.Text = "button3";
+            this.menyInnstillinger.Text = "Settings";
             this.menyInnstillinger.UseVisualStyleBackColor = true;
             this.menyInnstillinger.Click += new System.EventHandler(this.menyInnstillinger_Click);
             // 
@@ -255,7 +255,7 @@
             this.menyStatistikk.Name = "menyStatistikk";
             this.menyStatistikk.Size = new System.Drawing.Size(130, 44);
             this.menyStatistikk.TabIndex = 1;
-            this.menyStatistikk.Text = "button2";
+            this.menyStatistikk.Text = "Stats";
             this.menyStatistikk.UseVisualStyleBackColor = true;
             this.menyStatistikk.Click += new System.EventHandler(this.menyStatistikk_Click);
             // 
@@ -265,7 +265,7 @@
             this.menyStart.Name = "menyStart";
             this.menyStart.Size = new System.Drawing.Size(130, 44);
             this.menyStart.TabIndex = 0;
-            this.menyStart.Text = "button1";
+            this.menyStart.Text = "Start";
             this.menyStart.UseVisualStyleBackColor = true;
             this.menyStart.Click += new System.EventHandler(this.menyStart_Click);
             // 
