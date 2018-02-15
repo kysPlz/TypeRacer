@@ -109,7 +109,7 @@
             // 
             // spillParagraf
             // 
-            this.spillParagraf.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F);
+            this.spillParagraf.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.spillParagraf.Location = new System.Drawing.Point(20, 61);
             this.spillParagraf.Name = "spillParagraf";
             this.spillParagraf.Size = new System.Drawing.Size(357, 183);
