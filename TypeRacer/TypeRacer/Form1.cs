@@ -100,7 +100,16 @@ namespace TypeRacer
             }
             catch { }
 
-            spillParagraf.Text = paragraf[rnd.Next(5)];
+            //spillParagraf.Text = paragraf[rnd.Next(5)];
+            spillParagraf.Text = "Very nice!";
+        }
+
+        private void tekstEndret(object sender, EventArgs e)
+        {
+            if (spillSkrivHer.Text == spillParagraf.Text)
+                spillInfo.Text = "You're done!";
+            else
+                spillInfo.Text = "Not done yet!";
         }
 
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).

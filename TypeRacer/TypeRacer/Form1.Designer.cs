@@ -124,6 +124,7 @@
             this.spillSkrivHer.Size = new System.Drawing.Size(213, 32);
             this.spillSkrivHer.TabIndex = 0;
             this.spillSkrivHer.Text = "textBox1";
+            this.spillSkrivHer.TextChanged += new System.EventHandler(this.tekstEndret);
             // 
             // panelStatistikk
             // 
