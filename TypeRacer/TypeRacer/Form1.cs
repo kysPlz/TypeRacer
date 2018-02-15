@@ -24,6 +24,8 @@ namespace TypeRacer
         string filNavn = "paragraf.txt";
         Random rnd = new Random();
         string[] paragraf = new string[5];
+        int ordNmr = 0;
+        int antallOrd = 0;
         #endregion
 
         #region Programoppstart
@@ -78,7 +80,6 @@ namespace TypeRacer
             panelMeny.Visible = false;
             spillSkrivHer.Focus();
 
-            gjennkjennOrd();
             hentParagrafer();
         }
 
@@ -102,21 +103,30 @@ namespace TypeRacer
             }
             catch { }
 
-            //spillParagraf.Text = paragraf[rnd.Next(5)];
-            spillParagraf.Text = "Very nice!";
+            spillParagraf.Text = paragraf[rnd.Next(5)];
+            //spillParagraf.Text = "Very nice!";
         }
 
         private void tekstEndret(object sender, EventArgs e)
         {
-            if (spillSkrivHer.Text == spillParagraf.Text)
-                spillInfo.Text = "You're done!";
-            else
-                spillInfo.Text = "Not done yet!";
+            gjennkjennOrd();
         }
 
         private void gjennkjennOrd()
         {
             string[] ordForOrd = spillParagraf.Text.Split(' ');
+
+            spillTid.Text = "" + ordForOrd.Length;
+            if (spillSkrivHer.Text == ordForOrd[ordNmr] + " " && ordNmr < ordForOrd.Length - 1)
+            {
+                spillSkrivHer.Text = "";
+                antallOrd++;
+                ordNmr++;
+            }
+            else if (spillSkrivHer.Text == ordForOrd[ordNmr] && ordNmr == ordForOrd.Length - 1)
+            {
+                spillInfo.Text = "You're done!";
+            }
         }
 
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).
