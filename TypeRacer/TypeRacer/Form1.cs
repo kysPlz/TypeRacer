@@ -26,6 +26,8 @@ namespace TypeRacer
         string[] paragraf = new string[5];
         int ordNmr = 0;
         int antallOrd = 0;
+        int sek = 0;
+        int min = 0;
         #endregion
 
         #region Programoppstart
@@ -68,10 +70,8 @@ namespace TypeRacer
         #endregion
 
         #region panelSpill
-        private void timer1_Tick(object sender, EventArgs e)
-        {
-            
-        }
+
+
         #endregion
 
         private void spillStart()
@@ -141,6 +141,29 @@ namespace TypeRacer
                 spillParagraf.Select(spillParagraf.Text.IndexOf(ordForOrd[ordNmr - 1]), ordForOrd[ordNmr - 1].Length);
                 spillParagraf.SelectionBackColor = Color.White;
             }*/
+        }
+
+        private void timerTid_Tick(object sender, EventArgs e)
+        {
+
+            sek++;
+
+            if(sek == 60)
+            {
+                sek = sek - 60;
+                min++;
+            }
+
+            if (sek <= 9)
+            {
+                spillTidSek.Text = "0" + Convert.ToString(sek);
+            }
+            else
+            {
+                spillTidSek.Text = Convert.ToString(sek);
+            }
+            
+            spillTidMin.Text = Convert.ToString(min) + ":";
         }
 
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).

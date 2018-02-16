@@ -30,6 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.panelSpill = new System.Windows.Forms.Panel();
+            this.spillTidSek = new System.Windows.Forms.Label();
+            this.spillTidMin = new System.Windows.Forms.Label();
             this.spillOrdteller = new System.Windows.Forms.Label();
             this.spillTid = new System.Windows.Forms.Label();
             this.spillInfo = new System.Windows.Forms.Label();
@@ -54,9 +56,7 @@
             this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.innstillingerInfo = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.spillTidMin = new System.Windows.Forms.Label();
-            this.spillTidSek = new System.Windows.Forms.Label();
+            this.timerTid = new System.Windows.Forms.Timer(this.components);
             this.panelSpill.SuspendLayout();
             this.panelStatistikk.SuspendLayout();
             this.panelMeny.SuspendLayout();
@@ -77,6 +77,26 @@
             this.panelSpill.Name = "panelSpill";
             this.panelSpill.Size = new System.Drawing.Size(400, 300);
             this.panelSpill.TabIndex = 0;
+            // 
+            // spillTidSek
+            // 
+            this.spillTidSek.AutoSize = true;
+            this.spillTidSek.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.spillTidSek.Location = new System.Drawing.Point(341, 21);
+            this.spillTidSek.Name = "spillTidSek";
+            this.spillTidSek.Size = new System.Drawing.Size(36, 26);
+            this.spillTidSek.TabIndex = 6;
+            this.spillTidSek.Text = "00";
+            // 
+            // spillTidMin
+            // 
+            this.spillTidMin.AutoSize = true;
+            this.spillTidMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.spillTidMin.Location = new System.Drawing.Point(313, 21);
+            this.spillTidMin.Name = "spillTidMin";
+            this.spillTidMin.Size = new System.Drawing.Size(30, 26);
+            this.spillTidMin.TabIndex = 5;
+            this.spillTidMin.Text = "0:";
             // 
             // spillOrdteller
             // 
@@ -342,29 +362,11 @@
             this.innstillingerInfo.TabIndex = 7;
             this.innstillingerInfo.Text = "SETTINGS";
             // 
-            // timer1
+            // timerTid
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // spillTidMin
-            // 
-            this.spillTidMin.AutoSize = true;
-            this.spillTidMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.spillTidMin.Location = new System.Drawing.Point(307, 21);
-            this.spillTidMin.Name = "spillTidMin";
-            this.spillTidMin.Size = new System.Drawing.Size(24, 26);
-            this.spillTidMin.TabIndex = 5;
-            this.spillTidMin.Text = "0";
-            // 
-            // spillTidSek
-            // 
-            this.spillTidSek.AutoSize = true;
-            this.spillTidSek.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
-            this.spillTidSek.Location = new System.Drawing.Point(340, 21);
-            this.spillTidSek.Name = "spillTidSek";
-            this.spillTidSek.Size = new System.Drawing.Size(24, 26);
-            this.spillTidSek.TabIndex = 6;
-            this.spillTidSek.Text = "0";
+            this.timerTid.Enabled = true;
+            this.timerTid.Interval = 1000;
+            this.timerTid.Tick += new System.EventHandler(this.timerTid_Tick);
             // 
             // Form1
             // 
@@ -417,7 +419,7 @@
         private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label innstillingerInfo;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timerTid;
         private System.Windows.Forms.Label spillTidSek;
         private System.Windows.Forms.Label spillTidMin;
     }
