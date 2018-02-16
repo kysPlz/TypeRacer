@@ -57,6 +57,7 @@ namespace TypeRacer
         {
             panelStatistikk.Visible = true;
             panelMeny.Visible = false;
+            statistikk();
         }
 
         private void menyInnstillinger_Click(object sender, EventArgs e)
@@ -194,6 +195,18 @@ namespace TypeRacer
             WpM = ordForOrd.Length / ((sek / 60) + min);
             Math.Round(WpM, 1);
             ordpermin.Text = Convert.ToString(WpM);
+        }
+
+        private void statistikk()
+        {
+            //Totalt ord antall ord skrevet:
+            statistikkAntallOrd.Text = Convert.ToString(antallOrd);
+
+            //Beste runde:
+            //statistikkFlestOrd.Text = Convert.ToString();
+
+            //Gjennomsnittlig ord skrevet per minutt:
+            statistikkGjennomsnitt.Text = Convert.ToString(antallOrd / (min + (sek / 60)));
         }
 
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).
