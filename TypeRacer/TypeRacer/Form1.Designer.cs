@@ -55,6 +55,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.innstillingerInfo = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.spillTidMin = new System.Windows.Forms.Label();
+            this.spillTidSek = new System.Windows.Forms.Label();
             this.panelSpill.SuspendLayout();
             this.panelStatistikk.SuspendLayout();
             this.panelMeny.SuspendLayout();
@@ -64,6 +66,8 @@
             // panelSpill
             // 
             this.panelSpill.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelSpill.Controls.Add(this.spillTidSek);
+            this.panelSpill.Controls.Add(this.spillTidMin);
             this.panelSpill.Controls.Add(this.spillOrdteller);
             this.panelSpill.Controls.Add(this.spillTid);
             this.panelSpill.Controls.Add(this.spillInfo);
@@ -90,11 +94,11 @@
             this.spillTid.AutoSize = true;
             this.spillTid.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.spillTid.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.spillTid.Location = new System.Drawing.Point(307, 21);
+            this.spillTid.Location = new System.Drawing.Point(255, 21);
             this.spillTid.Name = "spillTid";
-            this.spillTid.Size = new System.Drawing.Size(46, 26);
+            this.spillTid.Size = new System.Drawing.Size(52, 26);
             this.spillTid.TabIndex = 3;
-            this.spillTid.Text = "TID";
+            this.spillTid.Text = "TID:";
             // 
             // spillInfo
             // 
@@ -342,6 +346,26 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // spillTidMin
+            // 
+            this.spillTidMin.AutoSize = true;
+            this.spillTidMin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.spillTidMin.Location = new System.Drawing.Point(307, 21);
+            this.spillTidMin.Name = "spillTidMin";
+            this.spillTidMin.Size = new System.Drawing.Size(24, 26);
+            this.spillTidMin.TabIndex = 5;
+            this.spillTidMin.Text = "0";
+            // 
+            // spillTidSek
+            // 
+            this.spillTidSek.AutoSize = true;
+            this.spillTidSek.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.spillTidSek.Location = new System.Drawing.Point(340, 21);
+            this.spillTidSek.Name = "spillTidSek";
+            this.spillTidSek.Size = new System.Drawing.Size(24, 26);
+            this.spillTidSek.TabIndex = 6;
+            this.spillTidSek.Text = "0";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -394,6 +418,8 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label innstillingerInfo;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label spillTidSek;
+        private System.Windows.Forms.Label spillTidMin;
     }
 }
 
