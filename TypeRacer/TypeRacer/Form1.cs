@@ -78,6 +78,7 @@ namespace TypeRacer
         {
             panelSpill.Visible = true;
             panelMeny.Visible = false;
+            spillSkrivHer.ReadOnly = false;
             spillSkrivHer.Focus();
 
             hentParagrafer();
@@ -115,8 +116,8 @@ namespace TypeRacer
         private void gjennkjennOrd()
         {
             string[] ordForOrd = spillParagraf.Text.Split(' ');
-
             spillTid.Text = "" + ordForOrd.Length;
+
             if (spillSkrivHer.Text == ordForOrd[ordNmr] + " " && ordNmr < ordForOrd.Length - 1)
             {
                 spillSkrivHer.Text = "";
@@ -125,7 +126,20 @@ namespace TypeRacer
             }
             else if (spillSkrivHer.Text == ordForOrd[ordNmr] && ordNmr == ordForOrd.Length - 1)
             {
+                spillSkrivHer.ReadOnly = true;
+                spillSkrivHer.Text = "Good job!";
                 spillInfo.Text = "You're done!";
+                antallOrd++;
+            }
+            if (spillParagraf.Text.Contains(ordForOrd[ordNmr]))
+            {
+                spillParagraf.Select(spillParagraf.Text.IndexOf(ordForOrd[ordNmr]), ordForOrd[ordNmr].Length);
+                spillParagraf.SelectionBackColor = Color.LightGreen;
+            }
+            if (spillParagraf.BackColor == Color.LightGreen && !spillParagraf.Text.Contains(ordForOrd[ordNmr]))
+            {
+                //spillParagraf.Select(spillParagraf.Text.(Color.LightGreen))
+                spillParagraf.BackColor = Color.White;
             }
         }
 
