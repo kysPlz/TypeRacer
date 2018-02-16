@@ -126,9 +126,8 @@ namespace TypeRacer
             }
             else if (spillSkrivHer.Text == ordForOrd[ordNmr] && ordNmr == ordForOrd.Length - 1)
             {
-                spillSkrivHer.ReadOnly = true;
-                spillSkrivHer.Text = "Good job!";
-                spillInfo.Text = "You're done!";
+
+                spillOver();
                 antallOrd++;
             }
             if (spillParagraf.Text.Contains(ordForOrd[ordNmr]))
@@ -164,6 +163,14 @@ namespace TypeRacer
             }
             
             spillTidMin.Text = Convert.ToString(min) + ":";
+        }
+
+        private void spillOver()
+        {
+            timerTid.Stop();
+            spillSkrivHer.ReadOnly = true;
+            spillSkrivHer.Text = "Good job!";
+            spillInfo.Text = "You're done!";
         }
 
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).
