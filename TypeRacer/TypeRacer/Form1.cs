@@ -26,8 +26,10 @@ namespace TypeRacer
         string[] paragraf = new string[5];
         int ordNmr = 0;
         int antallOrd = 0;
-        int sek = 0;
+        double sek = 0;
         int min = 0;
+        double WpM;
+        int antallRunder;
         #endregion
 
         #region Programoppstart
@@ -74,14 +76,20 @@ namespace TypeRacer
 
         #endregion
 
-        private void spillStart()
+        private async void spillStart()
         {
             panelSpill.Visible = true;
             panelMeny.Visible = false;
-            spillSkrivHer.ReadOnly = false;
+            spillSkrivHer.ReadOnly = true;
             spillSkrivHer.Focus();
 
             hentParagrafer();
+
+            await Task.Delay(5000);
+
+
+            spillSkrivHer.ReadOnly = false;
+            timerTid.Enabled = true;
         }
 
 
@@ -116,7 +124,7 @@ namespace TypeRacer
         private void gjennkjennOrd()
         {
             string[] ordForOrd = spillParagraf.Text.Split(' ');
-            spillTid.Text = "" + ordForOrd.Length;
+            //spillTid.Text = "" + ordForOrd.Length;
 
             if (spillSkrivHer.Text == ordForOrd[ordNmr] + " " && ordNmr < ordForOrd.Length - 1)
             {
@@ -165,12 +173,27 @@ namespace TypeRacer
             spillTidMin.Text = Convert.ToString(min) + ":";
         }
 
+        
+
         private void spillOver()
         {
             timerTid.Stop();
+            antallRunder++;
             spillSkrivHer.ReadOnly = true;
             spillSkrivHer.Text = "Good job!";
             spillInfo.Text = "You're done!";
+
+            beregnWpM();
+
+        }
+
+
+        private void beregnWpM()
+        {
+            string[] ordForOrd = spillParagraf.Text.Split(' ');
+            WpM = ordForOrd.Length / ((sek / 60) + min);
+            Math.Round(WpM, 1);
+            ordpermin.Text = Convert.ToString(WpM);
         }
 
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).

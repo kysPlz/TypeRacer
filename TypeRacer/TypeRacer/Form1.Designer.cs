@@ -57,6 +57,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.innstillingerInfo = new System.Windows.Forms.Label();
             this.timerTid = new System.Windows.Forms.Timer(this.components);
+            this.ordpermin = new System.Windows.Forms.Label();
             this.panelSpill.SuspendLayout();
             this.panelStatistikk.SuspendLayout();
             this.panelMeny.SuspendLayout();
@@ -66,6 +67,7 @@
             // panelSpill
             // 
             this.panelSpill.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.panelSpill.Controls.Add(this.ordpermin);
             this.panelSpill.Controls.Add(this.spillTidSek);
             this.panelSpill.Controls.Add(this.spillTidMin);
             this.panelSpill.Controls.Add(this.spillOrdteller);
@@ -103,11 +105,11 @@
             this.spillOrdteller.AutoSize = true;
             this.spillOrdteller.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
             this.spillOrdteller.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.spillOrdteller.Location = new System.Drawing.Point(307, 264);
+            this.spillOrdteller.Location = new System.Drawing.Point(255, 261);
             this.spillOrdteller.Name = "spillOrdteller";
-            this.spillOrdteller.Size = new System.Drawing.Size(57, 26);
+            this.spillOrdteller.Size = new System.Drawing.Size(63, 26);
             this.spillOrdteller.TabIndex = 4;
-            this.spillOrdteller.Text = "W/M";
+            this.spillOrdteller.Text = "W/M:";
             // 
             // spillTid
             // 
@@ -147,7 +149,6 @@
             this.spillSkrivHer.Name = "spillSkrivHer";
             this.spillSkrivHer.Size = new System.Drawing.Size(213, 32);
             this.spillSkrivHer.TabIndex = 0;
-            this.spillSkrivHer.Text = "textBox1";
             this.spillSkrivHer.TextChanged += new System.EventHandler(this.tekstEndret);
             // 
             // panelStatistikk
@@ -227,9 +228,9 @@
             this.statistikkTekst1.ForeColor = System.Drawing.SystemColors.ControlText;
             this.statistikkTekst1.Location = new System.Drawing.Point(16, 105);
             this.statistikkTekst1.Name = "statistikkTekst1";
-            this.statistikkTekst1.Size = new System.Drawing.Size(206, 26);
+            this.statistikkTekst1.Size = new System.Drawing.Size(193, 26);
             this.statistikkTekst1.TabIndex = 6;
-            this.statistikkTekst1.Text = "Total words counted";
+            this.statistikkTekst1.Text = "Total words written";
             // 
             // statistikkInfo
             // 
@@ -364,9 +365,18 @@
             // 
             // timerTid
             // 
-            this.timerTid.Enabled = true;
             this.timerTid.Interval = 1000;
             this.timerTid.Tick += new System.EventHandler(this.timerTid_Tick);
+            // 
+            // ordpermin
+            // 
+            this.ordpermin.AutoSize = true;
+            this.ordpermin.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F);
+            this.ordpermin.Location = new System.Drawing.Point(324, 261);
+            this.ordpermin.Name = "ordpermin";
+            this.ordpermin.Size = new System.Drawing.Size(24, 26);
+            this.ordpermin.TabIndex = 7;
+            this.ordpermin.Text = "0";
             // 
             // Form1
             // 
@@ -422,6 +432,7 @@
         private System.Windows.Forms.Timer timerTid;
         private System.Windows.Forms.Label spillTidSek;
         private System.Windows.Forms.Label spillTidMin;
+        private System.Windows.Forms.Label ordpermin;
     }
 }
 
