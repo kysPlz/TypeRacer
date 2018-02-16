@@ -136,11 +136,11 @@ namespace TypeRacer
                 spillParagraf.Select(spillParagraf.Text.IndexOf(ordForOrd[ordNmr]), ordForOrd[ordNmr].Length);
                 spillParagraf.SelectionBackColor = Color.LightGreen;
             }
-            if (spillParagraf.BackColor == Color.LightGreen && !spillParagraf.Text.Contains(ordForOrd[ordNmr]))
+            /*if (spillParagraf.Text.Contains(ordForOrd[ordNmr - 1]) && ordNmr != 0)
             {
-                //spillParagraf.Select(spillParagraf.Text.(Color.LightGreen))
-                spillParagraf.BackColor = Color.White;
-            }
+                spillParagraf.Select(spillParagraf.Text.IndexOf(ordForOrd[ordNmr - 1]), ordForOrd[ordNmr - 1].Length);
+                spillParagraf.SelectionBackColor = Color.White;
+            }*/
         }
 
         //panelStatistikk og panelInnstillinger har ingen "Events" som er nødvendige (hittil).
